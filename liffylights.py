@@ -134,7 +134,7 @@ class LiffyLights():
         target = bytearray.fromhex("00 00 00 00 00 00 00 00")
         reserved1 = bytearray.fromhex("00 00 00 00 00 00")
         sequence = pack("<B", sequence)
-        ack = pack(">B", 3)
+        ack = pack(">B", 2)
         reserved2 = bytearray.fromhex("00 00 00 00 00 00 00 00")
         packet_type = pack("<H", payloadtype)
         reserved3 = bytearray.fromhex("00 00")
